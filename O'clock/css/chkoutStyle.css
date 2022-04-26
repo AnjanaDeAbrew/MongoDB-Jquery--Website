@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#D5D5D5 ;
+	background-size: auto;
+}
+* {box-sizing: border-box;}
+.container {
+  padding: 16px;
+}
+table
+{
+    background-color: #FFFFFF;
+    border-bottom-style: hidden;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    text-align: center;
+    margin-right: auto;
+}
+h2
+{
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15pt;
+}
+
+h3
+{   
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size:10pt;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+input[type=text]{
+	
+	width: 60%;
+    margin-bottom: 20px;border: 0;
+  	outline: 0;
+	background: transparent;
+	border-bottom: 0.5px solid #828282;
+}
+::placeholder{
+    color: rgba(0,0,0,0.7);
+	text-align: left;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 15px;
+}
+
+input[type=submit] {
+    width: 25%;
+	height: 50px;
+
+	text-align: center;
+	margin:0 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border:2px solid #885b50;
+	background: #885b50;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+
+input[type=submit]:hover 
+{
+    background: #AC8484;
+	border: 2px solid #fff;
+}
+
+input[type=reset] {
+    width: 25%;
+	height: 50px;
+	padding :15px 0;
+	text-align: center;
+	margin:0 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border:2px solid #885b50;
+	background: #885b50;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+input[type=reset]:hover 
+{
+    background: #AC8484;
+	border: 2px solid #fff;
+	right: 500px;
+}
+
+input[type=password]{
+	width: 60%;
+    margin-bottom: 20px;border: 0;
+  	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid #828282;
+}
+textarea{
+	width: 60%;
+    margin-bottom: 20px;border: 0;
+  	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid #828282;
+}
+
+
+select {
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 11pt;
+	width:10%;
+}

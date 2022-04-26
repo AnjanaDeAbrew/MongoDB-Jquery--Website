@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O'clock</title>
+	<link rel="stylesheet" type="text/css" href="css/HomeStyle.css">
+</head>
+
+<body onload="slider()">
+	<div class="banner">
+		<div class="slider">
+			<img src="images/slider/1.jpg" width="100%" height="100%" id="slideImg">
+		</div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <div class="menu-icons">
+                    <div class="dropdown">
+                        <span class="menu"><a href="#">COLLECTION</a></span>
+                        <div class="dropdown-content">
+                          <a href="Wall.php">WALL</a>
+                          <a href="Melodies.php">MELODIES IN MOTION</a>
+                          <a href="pendulum.php">PENDULUM</a>
+                          <a href="Alarm.php">ALARM</a>
+                        </div>
+                      </div>
+                    
+                    <a href="loginpg.php"><img src="images/user.png"></a>
+    
+                </div>
+            </div>
+            <div class="content">
+                <h1>WELCOME ! </h1>
+                <h3>Make a choice to create a elegant your wall with a clock</h3>
+
+                <div>
+                    <button type="button"><a href="about.php">ABOUT US</a></button>
+                    <button type="button" class="btn-2"><a href="contact.php">CONTACT</a></button>
+                </div>
+            </div>
+        </div>
+	</div>
+    <script>
+        var slideImg=document.getElementById("slideImg");
+
+        var images = new Array(
+                "images/slider/1.jpg",
+                "images/slider/2.jpg",
+                "images/slider/3.jpg",
+                "images/slider/4.jpg",
+            );
+        var len= images.length;
+        var i=0;
+        function slider()
+        {
+            if(i>(len-1)){
+                i=0;
+            }
+            slideImg.src=images[i];
+            i++;
+            setTimeout('slider()',5000);
+        }
+    </script>
+
+</body>
+</html>
